@@ -1,0 +1,7 @@
+DECLARE
+incentive number;
+BEGIN
+SELECT salary * 0.20 INTO incentive FROM empdesig WHERE id=1;
+DBMS_OUTPUT.PUT_LINE('Incentive =' || TO_CHAR(incentive));
+END;
+/
